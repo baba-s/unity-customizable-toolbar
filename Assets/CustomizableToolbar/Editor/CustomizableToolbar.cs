@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace KoganeEditorLib
 {
-	public sealed class CustomizableToolbar : EditorWindow
+	public sealed class CustomizableToolbar : EditorWindow, IHasCustomMenu
 	{
 		private const string TITLE = "Toolbar";
 		private const float WINDOW_HEIGHT = 24;
@@ -62,6 +62,16 @@ namespace KoganeEditorLib
 			var path = string.Format( "{0}/Settings.asset", dir );
 
 			m_settings = AssetDatabase.LoadAssetAtPath<CustomizableToolbarSettings>( path );
+		}
+
+		public void AddItemsToMenu( GenericMenu menu )
+		{
+			menu.AddItem
+			(
+				new GUIContent( "Settings" ),
+				false,
+				() => EditorGUIUtility.PingObject( m_settings )
+			);
 		}
 	}
 }
