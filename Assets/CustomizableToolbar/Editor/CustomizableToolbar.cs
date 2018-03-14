@@ -13,7 +13,7 @@ namespace KoganeEditorLib
 
 		private CustomizableToolbarSettings m_settings;
 
-		[MenuItem( "Window/Project Settings Toolbar" )]
+		[MenuItem( "Window/Customizable Toolbar" )]
 		private static void Init()
 		{
 			var win = GetWindow<CustomizableToolbar>( TITLE );
