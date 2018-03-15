@@ -10,7 +10,7 @@ namespace KoganeEditorLib
 		[SerializeField] private string		m_commandName	= null	;
 		[SerializeField] private string		m_buttonName	= null	;
 		[SerializeField] private Texture	m_image			= null	;
-		[SerializeField] private int		m_width			= -1	;
+		[SerializeField] private int		m_width			= 0		;
 
 		public string	CommandName	{ get { return m_commandName	; } }
 		public string	ButtonName	{ get { return m_buttonName		; } }

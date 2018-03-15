@@ -44,7 +44,10 @@ namespace KoganeEditorLib
 				var image = n.Image;
 				var width = n.Width;
 				var content = image != null ? new GUIContent( image ) : new GUIContent( buttonName );
-				var options = width != -1 ? new [] { GUILayout.Width( width ), GUILayout.Height( BUTTON_HEIGHT ) } : new [] { GUILayout.Height( BUTTON_HEIGHT ) };
+				var options = 0 < width
+					? new [] { GUILayout.Width( width ), GUILayout.Height( BUTTON_HEIGHT ) }
+					: new [] { GUILayout.Width( EditorStyles.label.CalcSize( new GUIContent( buttonName ) ).x + 14 ), GUILayout.Height( BUTTON_HEIGHT ) }
+				;
 				if ( GUILayout.Button( content, options ) )
 				{
 					EditorApplication.ExecuteMenuItem( commandName );
