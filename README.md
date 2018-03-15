@@ -1,63 +1,65 @@
+[日本語の Readme はこちら](https://github.com/baba-s/unity-customizable-toolbar/blob/master/README_JP.md)  
+
 # UnityCustomizableToolbar
 
-Unity エディタで使用できるカスタマイズ可能なツールバー
+Customizable toolbar available in the Unity editor.
 
-# 開発環境
+# Version
 
 - Unity 2017.3.0f3
 
-# 導入方法
+# Install
 
-1. 下記のページにアクセスして「UnityCustomizableToolbar.unitypackage」をダウンロードします  
+1. Go to the following page and download "UnityCustomizableToolbar.unitypackage".  
 https://github.com/baba-s/unity-customizable-toolbar/blob/master/CustomizableToolbar.unitypackage?raw=true
-2. ダウンロードした「UnityCustomizableToolbar.unitypackage」を Unity プロジェクトにインポートします  
+2. Import the downloaded "UnityCustomizableToolbar.unitypackage" into the Unity project.  
 
-# スクリーンショット
+# Screenshot
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133510.png)
 
-# クイックスタート
+# Usage
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133622.png)
 
-Unity メニューの「Window>Customizable Toolbar」を選択すると  
+When you select "Window> Customizable Toolbar" in the Unity menu,  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133720.png)
 
-「Toolbar」ウィンドウが表示されるので、好きな場所にドッキングします  
+The "Toolbar" window will be displayed so you can dock it where you want.  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133802.png)
 
-「Toolbar」タブを右クリックして「Settings」を選択すると、  
+Right click on "Toolbar" tab and select "Settings",  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133902.png)
 
-Inspector に設定画面が表示されます  
+The setting screen appears in the Inspector.  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315133958.png)
 
-右下の「+」ボタンを押すと、ボタンのパラメータが追加されます  
+Press the "+" button at the bottom right to add the parameters of the button.  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315134202.png)
 
-「Command Name」の欄の右の「▼」を押すと、  
-コマンドの一覧が表示されるので、好きなコマンドを選択します  
+Pressing "Inverted triangle" to the right of the "Command Name",  
+A list of commands will be displayed, so select the command you like.  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315134306.png)
 
-すると、「Command Name」と「Button Name」が自動で入力され、  
+Then "Command Name" and "Button Name" are automatically entered,  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315134352.png)
 
-ツールバーにボタンが追加されます  
-そして、このボタンを押すと、設定したコマンドが実行されます  
+A button will be added to the toolbar.  
+Then, when this button is pushed, the set command is executed.  
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180315/20180315134552.png)
 
-「Command Name」は自由に入力できるので  
-自作した MenuItem を実行するボタンを作成することも可能です  
+Since "Command Name" can be entered freely,  
+It is also possible to create a button to execute your own MenuItem.  
 
-「Image」にテクスチャを設定すると、  
-「Button Name」の代わりにテクスチャが表示されます  
+When setting a texture in "Image",  
+A texture is displayed instead of "Button Name".  
 
-「Width」でボタンの幅を設定できます（0 なら自動調整）
+You can set the width of the button with "Width". ( Automatic adjustment if 0 )
